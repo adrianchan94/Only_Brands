@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
+import BusinessProfiles from "./Pages/BusinessProfiles/BusinessProfiles.components";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -11,7 +13,7 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route />
+          <Route path="/BusinessProfiles" component={BusinessProfiles} />
         </Switch>
       </div>
     );
